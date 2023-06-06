@@ -16,8 +16,8 @@ int check_cycle(listint_t *list)
 
 	while (snail && cheater && (*cheater).next)
 	{
-		slow = (*snail).next;
-		fast = *(*cheater.next).next;
+		snail = (*snail).next;
+		cheater = cheater->next->next;
 		if (snail == cheater)
 			return (1);
 	}
