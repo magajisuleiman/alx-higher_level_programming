@@ -11,4 +11,3 @@ elif digit == 0:
     print(f"0")
 else:
     print(f"less than 6 and not 0")
-
