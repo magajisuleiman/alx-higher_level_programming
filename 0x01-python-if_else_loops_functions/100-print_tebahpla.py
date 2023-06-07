@@ -6,4 +6,3 @@ for letter in range(ord("z"), ord("a") - 1, -1):
         i = 32
     else:
         i = 0
-
