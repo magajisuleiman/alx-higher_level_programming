@@ -6,6 +6,6 @@ def multiple_returns(sentence):
         if sentence == "":
             sentence = None
         else:
-            sentence = sentence[0] 
-       
+            sentence = sentence[0]
+
     return (counter, sentence)
