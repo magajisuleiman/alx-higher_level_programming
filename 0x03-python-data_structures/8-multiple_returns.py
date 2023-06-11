@@ -4,7 +4,8 @@ def multiple_returns(sentence):
     for i in sentence:
         counter += 1
         if sentence == "":
-            sentence == None
+            sentence = None
         else:
-            sentence == sentence 
-    return (counter, sentence[0])
+            sentence = sentence[0] 
+       
+    return (counter, sentence)
