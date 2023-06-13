@@ -18,7 +18,7 @@ void print_python_list_info(PyObject *p)
 	printf("[*] Allocated = %d\n", allocs);
 
 	j = 0;
-	while (i < sizes)
+	while (j < sizes)
 	{
 		printf("Element %d: ", j);
 
