@@ -33,7 +33,7 @@ void print_python_bytes(PyObject *p)
 		limits = sizes + 1;
 
 	printf("  first %ld bytes:", limits);
-	
+
 	j = 0;
 	while (j < limits)
 	{
