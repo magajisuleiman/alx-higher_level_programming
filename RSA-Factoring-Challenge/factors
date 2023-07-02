@@ -1,10 +1,34 @@
-#!/usr/bin/env bash
-# read from file given as argv[1] ($1) and print factors for each num in file
+#!/usr/bin/python3
 
-FILE=$1
+import sys
 
-while read NUM
-do
-    factors=($(factor $NUM))
-    echo "$NUM=$(($NUM/${factors[1]}))*${factors[1]}"
-done < $FILE
+def factorize(number):
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return i, number // i
+    return None
+
+if len(sys.argv) != 2:
+    print("Usage: factors <file>")
+    sys.exit(1)
+
+file_name = sys.argv[1]
+
+try:
+    with open(file_name, 'r') as file:
+        lines = file.readlines()
+        for line in lines:
+            number = int(line.strip())
+            factors = factorize(number)
+            if factors is not None:
+                p, q = factors
+                print(f"The number {number} can be factorized as {p} * {q}")
+            else:
+                print(f"The number {number} is a prime number")
+except FileNotFoundError:
+    print(f"Error: File '{file_name}' not found")
+    sys.exit(1)
+except ValueError:
+    print("Error: Invalid number in the file")
+    sys.exit(1)
+
