@@ -1,12 +1,14 @@
-class Rectangle:
+#!/usr/bin/python3
+"""
+Module 0-rectangle
+Contains class Rectangle
+Empty class
+"""
+
+
+class Rectangle():
     """
-    A class representing a rectangle.
-
-    Attributes:
-    None
-
-    Methods:
-    None
+    Defines empty class rectangle
     """
 
     pass
