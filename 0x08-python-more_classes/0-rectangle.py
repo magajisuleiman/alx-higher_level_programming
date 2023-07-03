@@ -6,7 +6,7 @@ Empty class
 """
 
 
-class Rectangle():
+class Rectangle:
     """
     Defines empty class rectangle
     """
