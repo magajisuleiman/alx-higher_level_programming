@@ -76,5 +76,5 @@ class Rectangle:
         """str formated output"""
         if self.__height == 0 or self.__width == 0:
             return ""
-        pic = "\n".join(["##" * self.__width for i in range(self.__height)])
+        pic = "\n".join(["#" * self.__width for i in range(self.__height)])
         return pic
