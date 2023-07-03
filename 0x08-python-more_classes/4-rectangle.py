@@ -80,4 +80,4 @@ class Rectangle:
 
     def __repr__(self) -> repr:
         """repr formated output to oval()"""
-        return "Rectangle(width={}, height={})".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
