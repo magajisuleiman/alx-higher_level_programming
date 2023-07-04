@@ -22,6 +22,9 @@ class Rectangle:
         height(self, value)
         area(self)
         perimeter(self)
+        __str__(self)
+        __repr__(self)
+        __del__(self)
     """
 
     number_of_instances = 0
@@ -80,13 +83,13 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return ""
         pic = "\n".join(
-            [self.print_symbol * self.__width for i in range(self.__height)]
+            [str(self.print_symbol) * self.__width for i in range(self.__height)]
         )
         return pic
 
     def __repr__(self) -> repr:
         """repr formated output to oval()"""
-        return "Rectangle({}, {})".format(self.__width, self.__height)
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     def __del__(self):
         """Destructor"""
