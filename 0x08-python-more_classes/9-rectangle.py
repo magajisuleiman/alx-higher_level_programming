@@ -22,6 +22,7 @@ class Rectangle:
         height(self, value)
         area(self)
         perimeter(self)
+        square(cls, size)
     """
 
     number_of_instances = 0

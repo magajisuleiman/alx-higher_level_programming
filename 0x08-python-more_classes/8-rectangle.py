@@ -22,6 +22,7 @@ class Rectangle:
         height(self, value)
         area(self)
         perimeter(self)
+        bigger_or_equal(rect_1, rect_2)
     """
 
     number_of_instances = 0
