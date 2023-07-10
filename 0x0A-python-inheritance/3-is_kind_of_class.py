@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-Module 2-is_same_class
+Module 3-is_kind_of_class
 
-Contains method is_same_class
-returns True if object is exactly an instance of specified class
+Contains method is_kind_of_class
+returns True if object is an instance of class that it inherited from
 """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """
     Notes:
         use type() to get specific class
@@ -15,6 +15,7 @@ def is_same_class(obj, a_class):
         use issubclass() to get what object is a subclass of
 
     Return:
-        True if obj is exactly an instance of specified class
+        True if obj is an instance of class that it inherited from
     """
-    return isinstance(obj, a_class)
+    result = isinstance(obj, a_class)
+    return result
