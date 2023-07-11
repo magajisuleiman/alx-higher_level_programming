@@ -13,6 +13,5 @@ def read_file(filename=""):
     filename
     """
     with open(filename, "r", encoding="UTF8") as file:
-        for line in file:
-            result = print(line.rstrip())
+        result = print(file.read(), end="")
     return result
