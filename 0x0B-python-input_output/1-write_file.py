@@ -1,17 +1,12 @@
-#!/usr /bin/python3
-
+#!/usr/bin/python3
 """
-Module 1-write_file.py
+Module 3-write_file
 
-contains a function that write a text and return the count
+Contains function that writes to text file and returns num chars written
 """
 
 
 def write_file(filename="", text=""):
-    """A function that writes to text and count"""
-    counter_text = 0
-    with open(filename, "w", encoding="UTF8") as file:
-        file.write(text)
-        for i in text:
-            counter_text += 1
-    return counter_text
+    """writes to text file and returns num chars written"""
+    with open(filename, mode="w", encoding="utf-8") as f:
+        return f.write(text)
