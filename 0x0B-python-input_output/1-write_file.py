@@ -8,6 +8,7 @@ contains a function that write a text and return the count
 
 
 def write_file(filename="", text=""):
+    """A function that writes to text and count"""
     counter_text = 0
     with open(filename, "w", encoding="UTF8") as file:
         file.write(text)
