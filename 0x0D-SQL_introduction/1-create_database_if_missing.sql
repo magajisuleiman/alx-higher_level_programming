@@ -1,3 +1,3 @@
---script that create a database
+-- create DataBase
 
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
