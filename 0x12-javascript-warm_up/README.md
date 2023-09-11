@@ -1,0 +1,1 @@
+This directory contains all the solution to ALX 0x12. JavaScript - Warm up
