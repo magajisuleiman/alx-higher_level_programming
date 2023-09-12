@@ -1,12 +1,14 @@
 #!/usr/bin/node
 const { argv } = require('process');
 
-const size = parseInt(argv[2], 10);
-
-if (isNaN(size)) {
+if (isNaN(argv[2])) {
   console.log('Missing number of occurrences');
 } else {
-  for (let i = 0; i < size; i += 1) {
-    console.log('x'.repeat(size));
+  for (let i = 0; i < argv[2]; i++) {
+    let line = '';
+    for (let j = 0; j < argv[2]; j++) {
+      line += 'X';
+    }
+    console.log(line);
   }
 }
