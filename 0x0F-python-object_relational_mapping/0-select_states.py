@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-return all table values (table 'states')
-parameters given to script: username, password, database
+return all states
 """
 
 import MySQLdb
@@ -18,5 +17,3 @@ if __name__ == "__main__":
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
     for row in cursor.fetchall():
         print(row)
-    cursor.close()
-    db.close()
