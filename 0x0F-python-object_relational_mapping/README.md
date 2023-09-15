@@ -1,0 +1,1 @@
+This directory contail all the solutions to ALX 0x0F. Python - Object-relational mapping
